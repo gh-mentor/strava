@@ -62,11 +62,11 @@ TRUNCATE TABLE categories;
 
 -- Populate the 'categories' table with sample data.
 INSERT INTO categories (category_id, category_name)
-VALUES (1, 'Electronics'),
+VALUES (1, 'Electronics and Wiring'),
        (2, 'Clothing'),
        (3, 'Books'),
        (4, 'Home & Kitchen'),
-       (5, 'Toys & Games'),
+       (5, 'Toys'),
        (6, 'Sports & Outdoors'),
        (7, 'Beauty & Personal Care');
 
@@ -82,8 +82,7 @@ VALUES (1, 'Smartphone', 1, 799.99),
        (8, 'Board Game', 5, 24.99),
          (9, 'Soccer Ball', 6, 19.99),
          (10, 'Yoga Mat', 6, 29.99),
-         (11, 'Shampoo', 7, 6.99),
-         (12, 'Lipstick', 7, 12.99);
+         (11, 'Shampoo', 7, 6.99);
 
 -- Create a stored procedure to get all categories.
 IF OBJECT_ID('spGetAllCategories', 'P') IS NOT NULL
