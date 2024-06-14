@@ -10,7 +10,7 @@ namespace PayrollLibrary
   Details:
   - The class is abstract.
   - The class has the following nullable public properties:
-    - Id (int, read-only)
+    - Id (integer, read-only)
     - ReportsTo (int)
     - Name (string)
     - Email (string)
@@ -32,6 +32,9 @@ namespace PayrollLibrary
     public string? Mobile { get; set; }
     public int? DepartmentId { get; set; }
 
+    /// <summary>
+    /// Represents an employee.
+    /// </summary>
     public Employee(int? id, int? reportsTo, string? name, string? email, string? mobile, int? departmentId)
     {
       Id = id;
@@ -42,7 +45,26 @@ namespace PayrollLibrary
       DepartmentId = departmentId;
     }
 
+    /// <summary>
+    /// Represents an employee.
+    /// </summary>
+    public Employee()
+    {
+      Id = null;
+      ReportsTo = null;
+      Name = null;
+      Email = null;
+      Mobile = null;
+      DepartmentId = null;
+    }
+
     public abstract double Payment { get; }
+
+
+    /// <summary>
+    /// Gets the details of the employee.
+    /// </summary>
+    /// <returns>string</returns>
     public virtual string EmployeeDetails
     {
       get

@@ -16,6 +16,6 @@ can you describe how I might use latex to document an existing application?
 Requirements:
 I do not want the code. Just show me sample data
 
-@workspace i need some sample JSON array of at least 10 rows of data. The data should include the following keys: EmployeeID, DepartmentID, FirstName, LastName, HourlyRate. 
+@workspace i need a sample JSON array of 10 rows of data. The data should include the following keys: EmployeeID, DepartmentID, FirstName, LastName, HourlyRate. 
 Requirements:
 I do not want the code. Just show me sample data
